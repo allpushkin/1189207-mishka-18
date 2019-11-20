@@ -1,0 +1,219 @@
+/* stylelint-disable */
+/* stylelint-enable */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.blue {
+  outline: 1px solid blue; }
+
+.red {
+  outline: 1px solid red; }
+
+.green {
+  outline: 1px solid green; }
+
+.temp {
+  background-color: rgba(0, 255, 0, 0.3); }
+
+.temp > * {
+  outline: 1px dotted red; }
+
+.temp > * > * {
+  outline: 1px dotted blue; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.button {
+  background-color: transparent;
+  border: none; }
+
+.container {
+  width: 320px;
+  padding: 23px 30px;
+  margin: auto; }
+
+.header {
+  position: relative; }
+
+.logo {
+  width: 86px;
+  margin: auto; }
+
+.header__menu-opener {
+  position: absolute;
+  top: 6px;
+  right: -1px;
+  padding: 11px 11px;
+  cursor: pointer; }
+
+.header__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  position: relative;
+  top: 14px;
+  left: 0;
+  background-color: #ffffff; }
+
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 260px;
+  height: 80px; }
+
+.header__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin: auto 0;
+  padding-left: 46px;
+  font-size: 17px;
+  font-weight: 700; }
+
+.header__search-description::before {
+  content: url("../../../img/icon-search.svg");
+  position: absolute;
+  top: 31px;
+  left: 3px; }
+
+.header__search {
+  margin: auto;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0 10px 46px;
+  border: none; }
+  .header__search::-webkit-input-placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    opacity: 1; }
+  .header__search::-moz-placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    opacity: 1; }
+  .header__search:-ms-input-placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    opacity: 1; }
+  .header__search::-ms-input-placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    opacity: 1; }
+  .header__search::placeholder {
+    font-size: 17px;
+    font-weight: 700;
+    opacity: 1; }
+
+.header__link--basket {
+  margin-top: 25px; }
+  .header__link--basket::before {
+    content: url("../../../img/icon-cart.svg");
+    position: absolute;
+    top: 29px;
+    left: 1px; }
+
+.header--no-js .header__menu-opener {
+  display: none; }
+
+.header--no-js .header__menu {
+  display: block; }
+
+.header--opened .header__menu {
+  display: block;
+  position: absolute;
+  top: 50px; }
+
+.header__button-icon {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .header__button-icon::before, .header__button-icon::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .header__button-icon::after {
+    top: 6px; }
+
+.header--opened .header__button-icon {
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .header--opened .header__button-icon::before, .header--opened .header__button-icon::after {
+    width: 27px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 82% 60%;
+            transform-origin: 82% 60%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .header--opened .header__button-icon::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.goods__title-wrapper {
+  text-align: center; }
+
+.goods__title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.goods__group {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.goods__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 19px;
+  font-weight: 700; }
+
+.example {
+  margin-left: 16;
+  width: calc(100% - 16); }
+
+/*# sourceMappingURL=style.css.map */
