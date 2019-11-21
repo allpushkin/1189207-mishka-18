@@ -10,4 +10,3 @@ navButton.addEventListener('click', function () {
   navMain.classList.add('header--opened')
   }
 });
-

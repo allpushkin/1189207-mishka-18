@@ -14,7 +14,8 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  line-height: 24px; }
+  line-height: 24px;
+  min-width: 320px; }
 
 .blue {
   outline: 1px solid blue; }
@@ -57,7 +58,8 @@ body {
   margin: auto; }
 
 .header {
-  position: relative; }
+  position: relative;
+  margin-bottom: 16px; }
 
 .logo {
   width: 86px;
@@ -78,7 +80,8 @@ body {
   position: relative;
   top: 14px;
   left: 0;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  z-index: 2; }
 
 .header__item {
   display: -webkit-box;
@@ -93,13 +96,12 @@ body {
   height: 80px; }
 
 .header__link {
-  display: block;
-  text-decoration: none;
-  color: #000000;
   margin: auto 0;
   padding-left: 46px;
   font-size: 17px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000; }
 
 .header__search-description::before {
   content: url("../../../img/icon-search.svg");
@@ -196,9 +198,23 @@ body {
   text-align: center; }
 
 .goods__title {
+  position: relative;
   font-size: 27px;
   font-weight: 700;
-  line-height: 30px; }
+  line-height: 30px;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 123px;
+  background: #fbfbfb url("../../../img/hero-mobile@1x.jpg") 49% 20% no-repeat; }
+  .goods__title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    left: -30px;
+    bottom: 0;
+    z-index: -1;
+    background-color: #fbfbfb; }
 
 .goods__group {
   padding: 0;
@@ -206,14 +222,50 @@ body {
   list-style: none; }
 
 .goods__link {
+  position: relative;
+  z-index: 0;
   display: block;
-  text-decoration: none;
-  color: #000000;
+  padding: 27px 0;
   font-size: 19px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none; }
+  .goods__link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    left: -30px;
+    bottom: 0;
+    z-index: -1;
+    background-color: #63d1bb; }
+  .goods__link:hover::before {
+    bottom: -5px; }
+  .goods__link:hover::after {
+    opacity: 0.7; }
+  .goods__link:hover {
+    top: -5px; }
 
-.example {
-  margin-left: 16;
-  width: calc(100% - 16); }
+.goods__link-name {
+  display: block;
+  width: 175px;
+  word-wrap: break-word; }
+
+.goods__link--interior::after {
+  content: url("../../../img/icon-interior.svg");
+  position: absolute;
+  top: 23px;
+  right: 4px;
+  opacity: 0.5; }
+
+.goods__link--toys::before {
+  background-color: #56c3b2; }
+
+.goods__link--toys::after {
+  content: url("../../../img/icon-toy.svg");
+  position: absolute;
+  top: 22px;
+  right: -4px;
+  opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */
