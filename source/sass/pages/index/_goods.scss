@@ -1,3 +1,19 @@
+.goods {
+  padding-bottom: 42px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url("../img/bg-zigzag-line-mini2.svg");
+    position: absolute;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+}
+
 .goods__title-wrapper {
   text-align: center;
 }
@@ -76,5 +92,26 @@
     top: 22px;
     right: -4px;
     opacity: 0.5;
+  }
+}
+
+@media (min-width: $medium) {
+  .goods::after {
+    left: 50px;
+    right: 50px;
+    height: 17px;
+  }
+
+  .goods__group {
+    display: flex;
+  }
+
+  .goods__group-item {
+    flex-grow: 1;
+  }
+
+  .goods__link::before {
+    left: 0;
+    right: 0;
   }
 }

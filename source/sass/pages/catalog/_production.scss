@@ -50,3 +50,29 @@
   @include font(17, 700, 16);
   text-decoration: none;
 }
+
+@media (min-width: $medium) {
+  .production {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .production__wrap {
+    order: -1;
+  }
+}
+
+@media (min-width: $large) {
+  .production {
+    position: relative;
+    padding-left: 60%;
+  }
+
+  .production__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    padding-top: 33.75%;
+  }
+}
