@@ -30,9 +30,9 @@
 }
 
 .copyright__logo {
-  width: 40px;
+  width: 35px;
   height: 50px;
-  margin-top: 5px;
+  margin: 5px 6px 0 0;
 }
 
 .logo-footer {
@@ -40,13 +40,35 @@
 }
 
 @media (min-width: $medium) {
-  .main-footer {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .logo-footer {
     display: block;
     order: -1;
+    margin: 0 0 8px 0;
+  }
+
+  .main-footer {
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .copyright {
+    margin: 0;
+  }
+
+  .copyright__text {
+    padding-left: 6px;
+  }
+
+  .copyright__logo {
+    width: 35px;
+    margin: 5px 0 0 0;
+  }
+
+  .social-icon {
+    margin-left: 160px;
+    padding-top: 23px;
   }
 }
